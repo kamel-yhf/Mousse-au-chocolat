@@ -1,9 +1,9 @@
-﻿<?php
+<?php
 
-include_once('./Ingredient.php');
-include_once('./Ustensile.php');
-include_once('./Appareil.php');
-include_once('./Recette.php');
+include_once('Ingredient.php');
+include_once('Ustensile.php');
+include_once('Appareil.php');
+include_once('Recette.php');
 
 $ingredients = [
     $chocolat = new Ingredient('chocolat', 100, 'grammes'),

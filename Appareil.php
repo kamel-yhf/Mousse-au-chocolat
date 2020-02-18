@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 class Appareil
 {
   private $name;
