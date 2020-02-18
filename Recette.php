@@ -62,6 +62,12 @@ class Recette{
     public function setAppareils($appareils) {
         $this->appareils = $appareils;
     }
+
+    /*****METHODE RECETTE */
+    public function casser(){
+        echo ("je casse le " . $this->getIngredients());
+    }
 }
 
-
+// $action = new Recette("chocolat","fouet", "fouetter");
+// echo $action->casser();

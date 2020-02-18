@@ -16,11 +16,11 @@ class Ingredient
 //getter et setter
   public function getName()
   {
-    return $this->nom;
+    return $this->name;
   }
   public function setName($name)
   {
-    $this->nom = $name;
+    $this->name = $name;
   }
 
   public function getQuantity()
@@ -43,5 +43,5 @@ class Ingredient
 }
 /*
 $choco = new Ingredient('chocolat', 100, 'gramme');
-echo $choco->getNom() . ' ' . $choco->getQuantity() . ' ' . $choco->getMesure();
+echo $choco->getName() . ' ' . $choco->getQuantity() . ' ' . $choco->getMesure();
 */

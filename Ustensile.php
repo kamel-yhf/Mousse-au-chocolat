@@ -44,5 +44,5 @@ class Ustensile
 }
 /*
 $outils = new Ustensile('bol', 'contenir', 'bois');
-echo $outils->getNom() . ' ' . $outils->getUtility() . ' ' . $outils->getMateriaux();
+echo $outils->getName() . ' ' . $outils->getUtility() . ' ' . $outils->getMateriaux();
 */

@@ -22,23 +22,37 @@ $appareils = [
     $frigo = new Appareil('frigo', 'refroidir')
 ];
 
+
+
+
+
 $mousseChoco = new Recette($ingredients, $ustensiles, $appareils);
 foreach($mousseChoco->getIngredients() as $ingredient) {
     echo 'Vous avez besoin de '.$ingredient->getQuantity().' '.$ingredient->getMesure().' de '.$ingredient->getName().'<br>';
+    
+   foreach ($ingredient as $key => $value) {
+        if($value == 'chocolat'){
+            echo $key . ' du ' . $value . '<br>';
+        }
+   }
 }
-foreach($mousseChoco->getUstensiles() as $ustensile) {
+
+
+
+
+
+/*foreach($mousseChoco->getUstensiles() as $ustensile) {
     echo 'Vous avez besoin de '.$ustensile->getName().' qui servira à '.$ustensile->getUtility().'<br>';
 }
 foreach($mousseChoco->getAppareils() as $appareil) {
     echo 'Appareil nécessaire : '.$appareil->getName().' pour '.$appareil->getUtility().'<br>';
-}
+}*/
 
 //var_dump($mousseChoco);
-/*
-var_dump($mousseChoco->getIngredients());
-var_dump($mousseChoco->getUstensiles());
-var_dump($mousseChoco->getAppareils());
-*/
+// var_dump($mousseChoco->getIngredients());
+// var_dump($mousseChoco->getUstensiles());
+// var_dump($mousseChoco->getAppareils());
+
 
 
 
